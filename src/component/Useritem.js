@@ -17,9 +17,9 @@ const Useritem = (props) => {
             <div className="card my-3 shadow bg-body rounded">
                 <div className="card-body bg-info bg-gradient ">
                     <div className='d-flex justify-content-between'>
-                        <span><i className={admin ? 'd-block fa-sharp fa-solid fa-trash' : 'd-none'}  onClick={()=>{deleteUser(user._id)}}></i></span>
+                        <span><i className={admin === "true" ? 'd-block fa-sharp fa-solid fa-trash' : 'd-none'}  onClick={()=>{deleteUser(user._id)}}></i></span>
                         <h5 className="card-title"> {user.name}</h5>
-                        <span><i className={admin ? 'd-block fa-solid fa-user-pen' : 'd-none'} onClick={()=>{updateUser(user)}}></i></span>
+                        <span><i className={admin === "true" ? 'd-block fa-solid fa-user-pen' : 'd-none'} onClick={()=>{updateUser(user)}}></i></span>
                     </div>
                     <p className="card-text"><b>Email id: </b>{user.email}</p>
                     
