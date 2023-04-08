@@ -24,7 +24,7 @@ const Navbar = () => {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                            <Link className={localStorage.getItem('admin') ? 'd-block nav-link active' : 'd-none'} aria-current="page" to="/addemploye">Add Employe</Link>
+                            <Link className={localStorage.getItem('admin') === "true" ? 'd-block nav-link active' : 'd-none'} aria-current="page" to="/addemploye">Add Employe</Link>
                             </li>
                         </ul>
                         {!localStorage.getItem('token')?<form className="d-flex">
