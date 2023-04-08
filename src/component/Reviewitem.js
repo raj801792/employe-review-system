@@ -25,9 +25,9 @@ const Reviewitem = (props) => {
                     <div className="card my-3 shadow bg-body rounded">
                         <div className="card-body bg-info bg-gradient ">
                             <div className='d-flex justify-content-between'>
-                                <span><i className={localStorage.getItem('admin') ? 'd-block fa-sharp fa-solid fa-trash' : 'd-none'} onClick={()=>{deleteReview(rev._id)}}></i></span>
+                                <span><i className={localStorage.getItem('admin') === "true" ? 'd-block fa-sharp fa-solid fa-trash' : 'd-none'} onClick={()=>{deleteReview(rev._id)}}></i></span>
                                 <h5 className="card-title"> {rev.user.name}</h5>
-                                <span><i className={localStorage.getItem('admin') ? 'd-block fa-solid fa-user-pen' : 'd-none'} onClick={()=>{updateReview(rev)}} ></i></span>
+                                <span><i className={localStorage.getItem('admin') === "true" ? 'd-block fa-solid fa-user-pen' : 'd-none'} onClick={()=>{updateReview(rev)}} ></i></span>
                             </div>
                             <p className="card-text"><b>Review:</b> {rev.content}</p>
                         </div>
