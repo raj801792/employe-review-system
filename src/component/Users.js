@@ -57,8 +57,8 @@ const Users = () => {
                                     <input type="text" className="form-control" id="ename" name="ename" value={user.ename} aria-describedby="emailHelp" onChange={onChange} required />
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="email" className="form-label">Set Admin</label>
-                                    <input type="text" className="form-control" id="eemail" name="eemail" value={user.eisAdmin} onChange={onChange}  required />
+                                    <label htmlFor="isAdmin" className="form-label">Set Admin</label>
+                                    <input type="text" className="form-control" id="eisAdmin" name="eisAdmin" value={user.eisAdmin} onChange={onChange}  required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="phoneNo" className="form-label">phoneNo</label>
